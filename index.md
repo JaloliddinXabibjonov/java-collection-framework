@@ -537,9 +537,6 @@ Ishlash Samaradorligi (Time Complexity):
 
 
 
-Ushbu malumotnoma Xabibjonov Jaloliddin tomonidan tayyorlandi.
-==**Muallif ruxsatisiz tarqatmang.**==
-
 Telegram: @JaloliddinXabibjonov
 
 Tel: +998 99 363 62 24
