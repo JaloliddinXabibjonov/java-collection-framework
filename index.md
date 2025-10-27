@@ -185,6 +185,8 @@ Foydalanish joylari:
 - Eng kichik yoki eng katta qiymatlarni topishda
 - Malum intervaldagi qiymatlarni olishda
 - Natural yoki maxsus tartibda unique elementlarni saqlashda
+
+
 ##### **5.2. NavigableSet**
 
 NavigableSet - `SortedSet` dan extend olgan va o'zining bir nechta metolarini qo'shgan. U `SortedSet`dan farqli ravishda ascending va `descending iterator` tartib bo'ylab yurish imkoniyati bor. U bizga berilgan elementga yaqin qiymatlarni olishda qo'l keladi.
