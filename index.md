@@ -98,9 +98,6 @@ public class ArrayList<E> extends AbstractList<E> implements List<E>, RandomAcce
 - `new LinkedList<>()` - bo'sh ro'yxat yaratish uchun ishlatiladi
 - `new LinkedList<>(Collection c)` - berilgan collectionning iteratori qaytargan ro'yxat asosida tartibli ro'yxat yaratish uchun ishlatiladi
 
-<br>
-<br>
-
 *`ArrayList` va` LinkedList`dagi amallar samaradorligi:*
 
 | Amaliyot                        | ArrayList         | LinkedList                                    |
@@ -202,8 +199,6 @@ NavigableSet - `SortedSet` dan extend olgan va o'zining bir nechta metolarini qo
 *`SortedSet` va `NavigableSet` farqlari:*
 - `SortedSet` - faqat asosiy tartibni saqlashni ta'minlaydi
 - `NavigableSet` esa qo'shimcha metodlarga ega (`lower, floor, ceiling, higher`), ya'ni qidiruv osonroq
-  <br>
-  <br>
 
 ##### **5.3. TreeSet**
 
@@ -216,6 +211,8 @@ Xususiyatlari:
 -  `duplicate` elementlarga ruxsat yo'q, `ignore` qilinadi
 - `null` valuelarga ruxsat yo'q, `null` qiymat qo'shishga harakat qilinganda `NullPointerException` tashlanadi(JDK 7dan boshlab).
 - `Thread safe` emas, concurrent access berish uchun u `Collections.synchronizedSet()` dan foydalanish orqali `synchronized` qilinishi kerak.
+
+
 ##### **5.4.  HashSet**
 
 HashSet - bu `Hashmap` ga asoslangan `Set` interfacening implementatsiyasi.  U `unique` elementlarni saqlashga mo'ljallangan. `iterator()` metodi qaytargan iterator `fail-fast`, yani `iterator()` hamda `listIterator()` dan foydalanib iterator yaratilgandan keyin, list ustida iteratorning `remove` va `add` metodlaridan tashqari metodlar yordamida list o'zgartiriladigan bo'lsa, iterator `ConcurrentModificationException` tashlaydi.
@@ -374,6 +371,8 @@ Xususiyatlari:
 - `addFirst`, `addLast()`, `removeFirst()` va `removeLast()` kabi metodlar `O(1)` vaqtda bajariladi
 - `thread-safe` emas
 - `null` elementlarga ruxsat yo'q
+
+
 #### **7. Map**
 `Map` interface `key-value` juftligini to'plamini saqlaydi:
 - `key` `unique` bo'lishi kerak
@@ -381,6 +380,7 @@ Xususiyatlari:
 - `value` duplicate bo'lishi mumkin
 - bitta `null` value ga `HashMap` va `LinkedHashMap` kabi implementatsiyalarda rusxat etiladi. Ko'p implementatsiyalarda bit nechta `null` valuelarga ruxsat etiladi.
 -  Thread safe amaliyotlarda ConcurrentHashMap dan foydalanish mumkin.
+
 ##### **7.1 SequencedMap**
 SequencedMap - java 21 da bu interface qo'shilgan bo'lib, u xotirada `key-value` juftligini ma'lum bir tartibda saqlashni ta'minlaydi. Map interfacedan extend olgan. Qo'shimcha tarzda elementlar tartibi bilan ishlash imkonini beradi.
 
@@ -449,7 +449,7 @@ public class LinkedHashMap<K,V> extends HashMap<K,V> implements SequencedMap<K,V
 - bitta `null` keyga va bir nechta `null` valuelarga ruxsat bor
 - `doubly-linked list` implementatsiya bilan bir xil
 - `unsynchronized`, lekin uni ushbu usulda synchronized qilish mumkin:
- 
+
 ```java
 Map<K, V> synchronizedMap = Collections.synchronizedMap(new LinkedHashMap<>());
 ```
